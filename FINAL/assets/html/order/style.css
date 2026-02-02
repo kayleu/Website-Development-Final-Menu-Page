@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background-color: #6D3B3B; /* Deep earthy red */
+    color: #FBE6C2; /* Warm cream */
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4.25rem; font-weight: 800;
+    color: #FFFFFF;
+}
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #E78F3E; /* Golden orange */
+    margin-bottom: 30px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #8E5E4D; /* Earthy brown */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+legend {
+    font-weight: bold;
+    color: #FBE6C2;
+    font-size: 1.1rem;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #FBE6C2;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #D9A074; /* Subtle cream border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #FBE6C2;
+    color: #6D3B3B;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #D2601A; /* Vibrant orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #B74E13; /* Darker orange */
+}
+button[type="reset"] {
+    background-color: #E78F3E; /* Golden orange */
+}
+button[type="reset"]:hover {
+    background-color: #C67A2D; /* Darker golden orange */
+}
+.interactive {
+    margin-top: 20px;
+    text-align: center;
+}
+.interactive span {
+    cursor: pointer;
+    color: #D9A074; /* Soft cream highlight */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.interactive span:hover {
+    color: #FBE6C2;
+}
+
+.backdrop1{
+    width: 530px;
+    position: absolute;
+    bottom:0;
+    right: 3%;
+}
+
+.backdrop2{
+    width: 530px;
+    position: absolute;
+    bottom:-30%;
+    left: 0;
+}
+
+.backdrop3{
+    width: 530px;
+    position: absolute;
+    right: 3%;
+    bottom: -65%;
+    perspective: 300px;
+}
+
+#order-summary{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    line-height: 1.5;
+}

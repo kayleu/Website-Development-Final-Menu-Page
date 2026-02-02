@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Foodie's Delight</title>
+    <style>
+        body {
+            font-family: system-ui;
+            margin: 0;
+            padding: 0;
+            background-color: #6D3B3B;
+            color: #333;
+        }
+        header {
+            background-color: #f0eae0;
+            color: #653819;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.25rem; font-weight: 800;
+            color: #653819;
+        }
+        
+        header nav a {
+            color: #653819;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ffd7d1;
+        }
+        .menu-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .menu-section h2 {
+            font-size: 3.5em; font-weight: 800;;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .menu-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+        .menu-item {
+            background: #FBE6C2;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item-content {
+            padding: 20px;
+        }
+        .menu-item-content h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .menu-item-content p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .menu-item-content button {
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .menu-item-content button:hover {
+            background-color: #FBE6C2;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clyde's</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About the Store</a>
+            <a href="menu.html">Menu</a>
+            <a href="order-now.html">Order Now</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <p>Discover our delicious offerings, made with love and the freshest ingredients.</p>
+
+        <!-- Main Dishes Section -->
+        <h3 style="color: #ffffff; margin: 30px 0 10px; font-size: 2em;">Main Dishes</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="chicken.png" alt="1pc Chicken with Rice">
+                <div class="menu-item-content">
+                    <h3>1pc Chicken with Rice</h3>
+                    <p>A classic favorite served with steamed rice.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="chicken-fillet.png"  alt="1pc Chicken Fillet with Rice">
+                <div class="menu-item-content">
+                    <h3>1pc Chicken Fillet with Rice</h3>
+                    <p>Crispy chicken fillet paired with fragrant rice.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="burger-steak.png" alt="Burger Steak">
+                <div class="menu-item-content">
+                    <h3>Burger Steak</h3>
+                    <p>Juicy burger steak in a savory sauce with rice.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Snacks Section -->
+        <h3 style="color: #ffffff; margin: 30px 0 10px; font-size: 2em;">Snacks</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="boorger.png" alt="Burger">
+                <div class="menu-item-content">
+                    <h3>Burger</h3>
+                    <p>Delicious burger with fresh toppings.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="friess.png" alt="Fries">
+                <div class="menu-item-content">
+                    <h3>Fries</h3>
+                    <p>Golden crispy fries served hot.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="ice-cream.png" alt="Ice Cream">
+                <div class="menu-item-content">
+                    <h3>Ice Cream</h3>
+                    <p>Sweet and creamy ice cream.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <h3 style="color: #ffffff; margin: 30px 0 10px; font-size: 2em;">Drinks</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="coke-float.png" alt="Coke Float">
+                <div class="menu-item-content">
+                    <h3>Coke Float</h3>
+                    <p>Refreshing Coke with creamy vanilla ice cream.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="iced-tea.png" alt="Softdrinks">
+                <div class="menu-item-content">
+                    <h3>Iced Tea</h3>
+                    <p>Chilled iced tea to quench your thirst.</p>
+                    <a href="order-now.html">
+                        <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="pineapple.png" alt="Pineapple">
+                <div class="menu-item-content">
+                    <h3>Pineapple</h3>
+                    <p>Sweet and tangy pineapple drink.</p>
+                    <a href="order-now.html">
+                    <button>Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Foodie's Delight. All rights reserved.</p>
+    </footer>
+</body>
+</html>

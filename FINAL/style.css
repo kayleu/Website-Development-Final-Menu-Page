@@ -1,0 +1,76 @@
+body {
+    font-family: system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.25rem; font-weight: 800;
+    color: #653819;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3.25rem; font-weight: 800;
+    color: #ffffff;
+
+}
+header {
+    background-color: #f0eae0;
+    color: #653819;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header nav a {
+    color: #653819;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #ffd7d1;
+}
+.hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.png');
+    background-size: cover repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.5em;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #653819;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+}
